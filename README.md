@@ -5,9 +5,7 @@
 ## Tecnologias Usadas
 
 - **Frontend**: React, Vite
-- **Backend**: [Tecnologias utilizadas no backend, se houver]
-- **Banco de Dados**: [Banco de dados usado, se aplicável]
-- **Outras Tecnologias**: [Quaisquer outras tecnologias ou bibliotecas relevantes]
+- **Outras Tecnologias**: Em progresso
 
 ## Como rodar o projeto
 
