@@ -1,6 +1,6 @@
 # infoPig
 
-**infoPig** é um projeto que está sendo desenvolvido para um grupo de estudante de medicina veterinária, com o objeto de trazer de maneira diferente e descontraída dicas em manejo sanitário e práticas de higiene na criação de suínos. 
+**infoPig** é um projeto que está sendo desenvolvido para um grupo de estudantes de medicina veterinária, com o objeto de trazer de maneira diferente e descontraída dicas em manejo sanitário e práticas de higiene na criação de suínos. 
 
 ## Tecnologias Usadas
 
