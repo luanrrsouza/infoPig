@@ -1,5 +1,7 @@
+import { NavBar } from "@/components/Navbar";
+
 function HomePage() {
-  return <h1>Teste</h1>;
+  return <NavBar />;
 }
 
 export { HomePage };
