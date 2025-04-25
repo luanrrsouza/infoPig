@@ -13,7 +13,7 @@ function HomeSection() {
       />
 
       <div className="absolute inset-0 flex flex-col items-center justify-start text-center px-[1rem] pt-[13rem]">
-        <h1 className="font-heading text-[2.5rem] md:text-[3.75rem] text-[#E3D0B6] drop-shadow-[0_0.1875rem_0.375rem_rgba(0,0,0,0.8)] leading-tight">
+        <h1 className="font-heading text-[2.5rem] md:text-[3.75rem] text-amber-50 drop-shadow-[0_0.1875rem_0.375rem_rgba(0,0,0,0.8)] leading-tight">
           SUINOCULTURA FAMILIAR <br />
           MANEJO E CONTROLE QUE FAZEM A DIFERENÇA NO SEMIÁRIDO.
         </h1>
@@ -21,7 +21,7 @@ function HomeSection() {
         <Link
           to="objective"
           smooth={true}
-          duration={500}
+          duration={400}
           offset={-4.375}
           className="mt-[2.5rem]"
         >
