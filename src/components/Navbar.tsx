@@ -7,7 +7,7 @@ function NavBar() {
   const [isVisible, setIsVisible] = useState(true);
 
   const handleScroll = () => {
-    if (window.scrollY > scrollY && window.scrollY > 3.125 * 16) {
+    if (window.scrollY > scrollY && window.scrollY > 50) {
       setIsVisible(false);
     } else {
       setIsVisible(true);
@@ -28,79 +28,34 @@ function NavBar() {
           : "opacity-0 pointer-events-none"
       }`}
     >
-      <nav className="max-w-[80rem] mx-auto px-[1rem] h-full flex justify-between items-center relative">
+      <nav className="max-w-[80rem] mx-auto px-4 h-full flex justify-between items-center">
         <img
           src={PigLogo}
           alt="Logo da suinocultura familiar"
-          className="h-[11rem]"
+          className="h-[5rem] sm:h-[6rem] md:h-[7rem] object-contain"
         />
-        <ul className="flex gap-[1.5rem] items-center ml-auto text-[1rem]">
-          <li>
-            <Link
-              to="banner"
-              smooth={true}
-              duration={400}
-              offset={-4.375 * 16}
-              className="cursor-pointer text-white hover:text-[#D1A49E]"
-            >
-              Início
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="objective"
-              smooth={true}
-              duration={400}
-              offset={-4.375 * 16}
-              className="cursor-pointer text-white hover:text-[#D1A49E]"
-            >
-              Sobre o Estudo
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="better-practices"
-              smooth={true}
-              duration={400}
-              offset={-4.375 * 16}
-              className="cursor-pointer text-white hover:text-[#D1A49E]"
-            >
-              Boas Práticas
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="biosecurity"
-              smooth={true}
-              duration={400}
-              offset={-4.375 * 16}
-              className="cursor-pointer text-white hover:text-[#D1A49E]"
-            >
-              Biossegurança
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="structure"
-              smooth={true}
-              duration={400}
-              offset={-4.375 * 16}
-              className="cursor-pointer text-white hover:text-[#D1A49E]"
-            >
-              Ambiente e Estrutura
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="about-us"
-              smooth={true}
-              duration={400}
-              offset={-4.375 * 16}
-              className="cursor-pointer text-white hover:text-[#D1A49E]"
-            >
-              Sobre Nós
-            </Link>
-          </li>
+
+        <ul className="hidden md:flex gap-4 sm:gap-6 items-center ml-auto text-sm sm:text-base">
+          {[
+            { to: "banner", label: "Início" },
+            { to: "objective", label: "Sobre o Estudo" },
+            { to: "better-practices", label: "Boas Práticas" },
+            { to: "biosecurity", label: "Biossegurança" },
+            { to: "structure", label: "Ambiente e Estrutura" },
+            { to: "about-us", label: "Sobre Nós" },
+          ].map(({ to, label }) => (
+            <li key={to}>
+              <Link
+                to={to}
+                smooth={true}
+                duration={400}
+                offset={-72}
+                className="cursor-pointer text-white hover:text-[#D1A49E] transition-colors"
+              >
+                {label}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
