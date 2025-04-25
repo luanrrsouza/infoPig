@@ -3,33 +3,44 @@ import PigLogo from "../assets/images/pigLogo.png";
 import { Link } from "react-scroll";
 
 function NavBar() {
-  const [scrolled, setScrolled] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
+  const [isVisible, setIsVisible] = useState(true);
+
+  const handleScroll = () => {
+    if (window.scrollY > scrollY && window.scrollY > 3.125 * 16) {
+      setIsVisible(false);
+    } else {
+      setIsVisible(true);
+    }
+    setScrollY(window.scrollY);
+  };
 
   useEffect(() => {
-    const handleScroll = (): void => {
-      setScrolled(window.scrollY > 50);
-    };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [scrollY]);
 
   return (
-    <nav
+    <header
       className={`fixed top-0 left-0 w-full h-[4.5rem] z-50 transition-all duration-300 ${
-        scrolled ? "bg-[#AC7771] backdrop-blur shadow-md" : "bg-[#AC7771]"
+        isVisible
+          ? "bg-[#AC7771] opacity-100 pointer-events-auto"
+          : "opacity-0 pointer-events-none"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 h-full flex justify-between items-center relative">
-        <img src={PigLogo} alt="Logo do porquinho" className="h-[8rem] " />
-
-        <ul className="flex gap-6 items-center ml-auto">
+      <nav className="max-w-[80rem] mx-auto px-[1rem] h-full flex justify-between items-center relative">
+        <img
+          src={PigLogo}
+          alt="Logo da suinocultura familiar"
+          className="h-[11rem]"
+        />
+        <ul className="flex gap-[1.5rem] items-center ml-auto text-[1rem]">
           <li>
             <Link
               to="banner"
               smooth={true}
               duration={400}
-              offset={-70}
+              offset={-4.375 * 16}
               className="cursor-pointer text-white hover:text-[#D1A49E]"
             >
               Início
@@ -40,7 +51,7 @@ function NavBar() {
               to="objective"
               smooth={true}
               duration={400}
-              offset={-70}
+              offset={-4.375 * 16}
               className="cursor-pointer text-white hover:text-[#D1A49E]"
             >
               Sobre o Estudo
@@ -51,7 +62,7 @@ function NavBar() {
               to="better-practices"
               smooth={true}
               duration={400}
-              offset={-70}
+              offset={-4.375 * 16}
               className="cursor-pointer text-white hover:text-[#D1A49E]"
             >
               Boas Práticas
@@ -62,7 +73,7 @@ function NavBar() {
               to="biosecurity"
               smooth={true}
               duration={400}
-              offset={-70}
+              offset={-4.375 * 16}
               className="cursor-pointer text-white hover:text-[#D1A49E]"
             >
               Biossegurança
@@ -73,7 +84,7 @@ function NavBar() {
               to="structure"
               smooth={true}
               duration={400}
-              offset={-70}
+              offset={-4.375 * 16}
               className="cursor-pointer text-white hover:text-[#D1A49E]"
             >
               Ambiente e Estrutura
@@ -84,15 +95,15 @@ function NavBar() {
               to="about-us"
               smooth={true}
               duration={400}
-              offset={-70}
-              className="cursor-pointer  text-white hover:text-[#D1A49E]"
+              offset={-4.375 * 16}
+              className="cursor-pointer text-white hover:text-[#D1A49E]"
             >
               Sobre Nós
             </Link>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 }
 
