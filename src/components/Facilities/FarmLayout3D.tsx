@@ -137,7 +137,7 @@ function Orientation() {
         anchorX="center"
         anchorY="middle"
       >
-        🌞 Leste
+        Leste
       </Text>
       <Text
         position={[4, 0.1, 0]}
@@ -147,7 +147,7 @@ function Orientation() {
         anchorX="center"
         anchorY="middle"
       >
-        Oeste 🌙
+        Oeste
       </Text>
       <Text
         position={[0, 0.1, 0]}
@@ -196,16 +196,16 @@ const buildings = [
     color: "#c7c2b8",
     label: "Composto",
   },
-  { position: [3, 0, 8], size: [6, 2, 3], color: "#ffe5d4", label: "Reprod." },
-  { position: [3, 0, 4], size: [6, 2, 3], color: "#ffd1b3", label: "Gestação" },
+  { position: [3, 0, 8], size: [3, 2, 3], color: "#ffe5d4", label: "Reprod." },
+  { position: [3, 0, 4], size: [3, 2, 3], color: "#ffd1b3", label: "Gestação" },
   {
     position: [3, 0, 0],
-    size: [6, 2, 3],
+    size: [3, 2, 3],
     color: "#ffc2a1",
     label: "Maternidade",
   },
-  { position: [3, 0, -4], size: [6, 2, 3], color: "#ffb08f", label: "Crèche" },
-  { position: [3, 0, -8], size: [6, 2, 3], color: "#ff9e7d", label: "Engorda" },
+  { position: [3, 0, -4], size: [3, 2, 3], color: "#ffb08f", label: "Crèche" },
+  { position: [3, 0, -8], size: [3, 2, 3], color: "#ff9e7d", label: "Engorda" },
 ];
 
 export { FarmLayout3D };
