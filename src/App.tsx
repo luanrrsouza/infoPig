@@ -1,4 +1,5 @@
 import "./assets/styles/index.css";
+
 import { NavBar } from "./components/Navbar";
 import { HomePage } from "./pages";
 

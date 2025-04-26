@@ -5,7 +5,7 @@ function DisplaySanitaryGuidelines() {
   return (
     <main
       id="better-practices"
-      className="my-20 sm:my-24 md:my-40 w-full mx-auto flex flex-col gap-16 bg-cover bg-center"
+      className="mt-20 sm:mt-24 md:mt-40 w-full mx-auto flex flex-col gap-16 bg-cover bg-center min-h-screen" // Removendo a margem inferior
       style={{ backgroundImage: `url(${PigBackGround})` }}
     >
       <section className="w-full h-full bg-opacity-50">
