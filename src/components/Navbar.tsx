@@ -47,6 +47,7 @@ function NavBar() {
             { to: "better-practices", label: "Boas Práticas" },
             { to: "biosecurity", label: "Biossegurança" },
             { to: "structure", label: "Ambiente e Estrutura" },
+            { to: "vaccination", label: "Vacinação e Vermifugação" },
             { to: "about-us", label: "Sobre Nós" },
           ].map(({ to, label }) => (
             <li key={to}>
