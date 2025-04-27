@@ -15,13 +15,13 @@ const team: Person[] = [
   {
     name: "Luana Amarante",
     description:
-      "Graduanda de Medicina Veterinária na Faculdade Rebouças, atualmente no quarto período. Desde cedo, desenvolvi uma paixão genuína pelos animais, que se transformou em vocação. Hoje, sigo dedicada a aprimorar meus conhecimentos diariamente, com o sonho de construir uma carreira baseada no cuidado, na responsabilidade e no amor pelos animais.",
+      "Graduanda do 4º de Medicina Veterinária. Desde cedo, desenvolvi uma paixão genuína pelos animais, que se transformou em vocação. Hoje, sigo dedicada a aprimorar meus conhecimentos diariamente, com o sonho de construir uma carreira baseada no cuidado, na responsabilidade e no amor pelos animais.",
     image: Luana,
   },
   {
     name: "Rayanne Porto",
     description:
-      "Graduanda do quarto período de Medicina Veterinária, apaixonada por animais desde a infância. Busco constantemente expandir meus conhecimentos em diversas áreas, visando uma formação sólida e uma atuação profissional de excelência.",
+      "Graduanda do 4º de Medicina Veterinária, apaixonada por animais desde a infância. Busco constantemente expandir meus conhecimentos em diversas áreas, visando uma formação sólida e uma atuação profissional de excelência.",
     image: Rayanne,
   },
   {
